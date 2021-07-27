@@ -1,0 +1,46 @@
+.header {
+  //   width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+
+  background-image: linear-gradient(
+      To right bottom,
+      rgba($color-black, 0.7),
+      rgba($color-grey-light-3, 0.6)
+    ),
+    url(../img/img5.jpg);
+
+  &__logo-box {
+    position: absolute;
+    top: 2.1rem;
+    left: 5rem;
+    z-index: 1;
+
+    @include response(tab-port) {
+      // width  600px
+      top: 3.3rem;
+      left: 1.6rem;
+    }
+  }
+
+  &__logo {
+    height: 16rem;
+    // height: 100%;
+    cursor: pointer;
+
+    @include response(tab-port) {
+      // width  600px
+      height: 12rem;
+    }
+  }
+
+  &__text-box {
+    color: $color-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+.calculator2 {
+  height: 100vh;
+  background-color: $color-primary-light;
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+}
+
+.form-group legend {
+  font-size: $default-font-size;
+  font-weight: 400;
+}
+
+.form-group {
+  //   padding-bottom: 2rem;
+  font-size: $medium-font-size;
+}
+.form-group button {
+  width: 35%;
+}

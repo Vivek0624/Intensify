@@ -1,0 +1,40 @@
+.calculator {
+  height: 100vh;
+  background-color: $color-primary-light;
+  padding-top: 7rem;
+  //   padding-bottom: 7rem;
+
+  @include response(phone) {
+    height: 105vh;
+  }
+}
+
+.calculator1 {
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: 0 1rem 3rem rgba($color-black, 0.6);
+
+  // width: 20rem;
+}
+
+.form-group {
+  //   background-color: $color-grey-dark;
+
+  & button,
+  & input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid $color-grey-dark-2;
+    font-size: $default-font-size;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  & label {
+    font-size: $default-font-size;
+  }
+}
+
+.text-bottom {
+  font-size: $default-font-size;
+}

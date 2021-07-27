@@ -1,0 +1,85 @@
+.section-about {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(../img/about-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  // @include response(phone) {
+  //   // width < 900?
+  //   width: 50%;
+  //   min-height: 100vh;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: flex-start;
+  // }
+}
+
+.content {
+  max-width: 650px;
+  margin: 22rem 10rem;
+}
+
+.content .info h2 {
+  //   color: #226a80;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  //   font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 5rem;
+  margin-bottom: 4rem;
+}
+
+.content .info h2 span {
+  color: $color-black;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.content .info p {
+  font-size: $medium-font-size;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.media-icons a {
+  position: relative;
+  color: #111;
+  font-size: 2.5rem;
+  transition: 0.3s;
+  margin-bottom: 4rem;
+  transition-property: transform;
+}
+
+.media-icons a:not(:last-child) {
+  margin-right: 60px;
+}
+
+.media-icons a:hover {
+  color: $color-primary;
+  transform: scale(1.5);
+}
+
+// ANIMATIONS OF ABOUT
+.animation-right {
+  animation-name: moveInLeft;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+}
+
+.animation-left {
+  animation-name: moveInRight;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+}

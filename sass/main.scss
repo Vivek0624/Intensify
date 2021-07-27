@@ -1,0 +1,23 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+@import "components/carousel";
+@import "components/calculator1";
+@import "components/calculator2";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/plan";
+
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css);
